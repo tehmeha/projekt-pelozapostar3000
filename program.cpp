@@ -19,7 +19,7 @@ int main ()
     cin >> oznaka_kladjena;
 
     int mogucnost;
-    cout << "Odaberite jednu od mogucnosti: 1-pobjeduje prvi tim, 2-nerijeseno, 3- pobijeduje drugi tim ";
+    cout << "Odaberite jednu od mogucnosti: 1-pobjeduje prvi tim, 0-nerijeseno, 2- pobijeduje drugi tim ";
     cin >> mogucnost;
 
     double novac;
@@ -35,11 +35,11 @@ int main ()
             cout<<"Vas dobitak je:" << novac*koef_pobjeda1[i];
             break;
             }
-            else if(mogucnost==2)
+            else if(mogucnost==0)
             {
                 cout<<"Vas dobitak je:" << novac*koef_nerijesenoX[i];
             }
-            else if(mogucnost==3)
+            else if(mogucnost==2)
             {
                 cout << "Vas dobitak je:" << novac*koef_pobjeda2[i];
             }
