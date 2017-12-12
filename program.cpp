@@ -17,6 +17,14 @@ int main()
     double koef_nerijesenoX[10]={5, 9, 5, 10, 3.6, 5.4, 3.5, 3.45, 3.05, 3.4,};
     double koef_pobjeda2[10]={12, 21, 1.35, 23, 2.1, 1.27, 2.8, 4.85, 2.65, 4.35};
 
+     int broj_godina;
+    cout << "Upisite broj godina: " << endl;
+    cin >> broj_godina;
+    if (broj_godina<18)
+    {
+        cout << "Glupane imas manje od 18 godina ne smijes se kladit." << endl << "Prijavljeni ste policiji!!! " << endl << "TIRU RIRU TIRU RIRU" << endl;
+        return 0;
+    }
 
     for( int i=0;i<10;i++)
     {
